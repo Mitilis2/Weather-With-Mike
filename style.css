@@ -28,3 +28,10 @@ footer {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+
+.left {
+  display: inline;
+}
+.right {
+  display: inline;
+}
