@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 :root {
   --bg-color: #ffc43d;
   --text-color: #3e363f;
 }
 * {
-  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-family: "Architects Daughter", cursive, sans-serif;
   box-sizing: border-box;
 }
 h1 {
@@ -46,4 +46,7 @@ footer {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+}
+.container {
+  width: 80%;
 }
