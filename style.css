@@ -40,10 +40,51 @@ footer {
   background-color: var(--bg-color);
   color: var(--text-color);
   position: absolute;
+  font-size: 1.5rem;
   bottom: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
+  height: 60px;
 }
+
+.container {
+  width: 100%;
+  padding-right: 10.5em;
+  padding-left: 10.5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* Color Gradients for daily Weather Cards */
+.sunny {
+  background: linear-gradient(to bottom right, #e1f5c4, #ede574);
+}
+
+.rainy {
+  background: linear-gradient(to bottom right, #bdc3c7, #77b1d8, #7ea3c7);
+}
+
+.snowy {
+  background: linear-gradient(to bottom right, #e2ebf0, #cfd9df);
+}
+
+.cloudy {
+  background: linear-gradient(to bottom right, #bdc3c7, #2c3e50);
+}
+
+.windy {
+  background: linear-gradient(to top left, #fc466b, #3f5efb);
+}
+
+/* .test {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+} GRADIENTS TEST CSS*/
