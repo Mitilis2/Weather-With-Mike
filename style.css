@@ -1,3 +1,5 @@
+/* comment sections of CSS, group together */
+
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 :root {
@@ -7,6 +9,11 @@
 * {
   font-family: 'Architects Daughter', cursive, sans-serif;
   box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .logo {
   padding: 0;
@@ -19,11 +26,6 @@ nav {
 .navbar {
   display: flex;
   justify-content: flex-end;
-}
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 li {
@@ -67,9 +69,6 @@ footer {
 }
 
 /* Color Gradients for daily Weather Cards */
-.sunny {
-  background: linear-gradient(to bottom right, #e1f5c4, #ede574);
-}
 .days-of-week {
   margin-top: 1rem;
   display: flex;
@@ -81,7 +80,7 @@ footer {
 }
 .img {
   width: 13rem;
-  height: auto;
+  height: 13rem;
 }
 
 .temps,
@@ -117,6 +116,9 @@ footer {
 .windy {
   background: linear-gradient(to top left, #fc466b, #3f5efb);
 }
+.sunny {
+  background: linear-gradient(to bottom right, #e1f5c4, #ede574);
+}
 
 /* .test {
   display: flex;
@@ -126,3 +128,7 @@ footer {
   width: 250px;
   margin: 20px;
 } GRADIENTS TEST CSS*/
+
+.hidden {
+  display: none;
+}
