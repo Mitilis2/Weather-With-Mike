@@ -14,25 +14,35 @@ const friday = document.getElementById('friday');
 
 // create function to add hidden class to element
 function removeHidden(){
-monday.classList.remove('hidden')
-tuesday.classList.remove('hidden')
-wednesday.classList.remove('hidden')
-thursday.classList.remove('hidden')
-friday.classList.remove('hidden')
+    monday.classList.remove('hidden')
+    tuesday.classList.remove('hidden')
+    wednesday.classList.remove('hidden')
+    thursday.classList.remove('hidden')
+    friday.classList.remove('hidden')
 }
 
 
 let daily  = function hideWeek() {
     removeHidden();
-    document.getElementById('tuesday',).classList.toggle('hidden');
+    document.getElementById('tuesday',).classList.add('hidden');
     document.getElementById('wednesday',).classList.add('hidden');
     document.getElementById('thursday',).classList.add('hidden');
     document.getElementById('friday',).classList.add('hidden');
     
 }
+let threeDay  = function hideDays() {
+    removeHidden();
+    document.getElementById('thursday',).classList.add('hidden');
+    document.getElementById('friday',).classList.add('hidden');
+    
+}
 
-removeHidden();
+let fiveDay = function showAll (){
+    removeHidden()
+}
 dailyWeather.addEventListener('click', daily);
+threeDayWeather.addEventListener('click', threeDay);
+fiveDayWeather.addEventListener('click', fiveDay);
 
 
 
