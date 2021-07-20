@@ -10,9 +10,8 @@ const wednesday = document.getElementById('wednesday');
 const thursday = document.getElementById('thursday');
 const friday = document.getElementById('friday');
 
-const sandwich = document.getElementsByClassName('sandwich');
-const navbar = document.getElementsByClassName('navbar');
-
+const sandwich = document.getElementsByClassName('sandwich')[0];
+const navbar = document.getElementsByClassName('navbar')[0];
 // create an array for the days and use those
 
 // create function to add hidden class to element
