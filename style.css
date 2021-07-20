@@ -1,13 +1,13 @@
 /* comment sections of CSS, group together */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 :root {
   --bg-color: #ffc43d;
   --text-color: #3e363f;
 }
 * {
-  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-family: "Architects Daughter", cursive, sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -22,6 +22,8 @@ body {
 }
 nav {
   background-color: var(--bg-color);
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .navbar {
   display: flex;
