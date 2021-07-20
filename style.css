@@ -1,13 +1,13 @@
 /* comment sections of CSS, group together */
 
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 :root {
   --bg-color: #ffc43d;
   --text-color: #3e363f;
 }
 * {
-  font-family: "Architects Daughter", cursive, sans-serif;
+  font-family: 'Architects Daughter', cursive, sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -22,9 +22,8 @@ body {
 }
 nav {
   background-color: var(--bg-color);
-  padding-left: 2%;
-  padding-right: 2%;
 }
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -122,15 +121,73 @@ footer {
   background: linear-gradient(to bottom right, #e1f5c4, #ede574);
 }
 
-/* .test {
-  display: flex;
-  justify-content: space-between;
-  float: left;
-  height: 250px;
-  width: 250px;
-  margin: 20px;
-} GRADIENTS TEST CSS*/
-
 .hidden {
   display: none;
+}
+
+.sandwich {
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  top: 8px;
+  right: 1rem;
+  width: 35px;
+  height: 20px;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: red;
+}
+
+@media (max-width: 600px) {
+  .days-of-week {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .days-of-week img {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+  }
+
+  .sandwich {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .navbar li {
+    margin-left: 0;
+    margin-top: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li:hover {
+    background-color: rgb(227, 188, 63);
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer .container {
+    width: 100%;
+    font-size: 1rem;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+  }
 }
