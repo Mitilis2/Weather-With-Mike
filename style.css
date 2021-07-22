@@ -1,19 +1,24 @@
 /* comment sections of CSS, group together */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
 :root {
-  --bg-color: #ffc43d;
-  --text-color: #3e363f;
+  /* --bg-color: #ffc43d;
+  --text-color: #3e363f; */
+  --bg-color: #3a405a;
+  --border-color: #f9dec9;
+  --text-color: #99b2dd;
 }
 * {
-  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-family: "Arvo", cursive, sans-serif;
   box-sizing: border-box;
 }
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #99b2dd;
 }
 .logo {
   padding: 0;
@@ -77,7 +82,7 @@ footer {
 }
 
 .day {
-  border: 0.4rem solid black;
+  border: 0.4rem solid var(--border-color);
 }
 .img {
   width: 13rem;
@@ -89,7 +94,7 @@ footer {
   text-align: center;
 }
 .weekday {
-  color: green;
+  color: var(--bg-color);
 }
 .temps {
   font-size: 2.5rem;
@@ -198,3 +203,7 @@ footer {
     justify-content: flex-end;
   }
 }
+
+/* 3A405A */
+/* F9DEC9 */
+/* 99B2DD */
